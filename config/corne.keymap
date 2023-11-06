@@ -13,12 +13,12 @@
         compatible = "zmk,combos";
 
         combo_df_to_3 {
-            bindings = <&sl 4>;
+            bindings = <&tog 4>;
             key-positions = <15 16>;
         };
 
         combo {
-            bindings = <&to 0>;
+            bindings = <&tog 0>;
             key-positions = <35 23>;
             layers = <4>;
         };
