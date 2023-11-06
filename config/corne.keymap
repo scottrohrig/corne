@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -20,6 +21,12 @@
             bindings = <&to 0>;
             key-positions = <35 23>;
             layers = <4>;
+        };
+
+        combo_bt_next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <0 5>;
+            layers = <1>;
         };
     };
 
