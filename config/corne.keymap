@@ -15,10 +15,11 @@
         combo_df_to_3 {
             bindings = <&tog 4>;
             key-positions = <15 16>;
+            layers = <1>;
         };
 
         combo {
-            bindings = <&tog 0>;
+            bindings = <&tog 3>;
             key-positions = <35 23>;
             layers = <4>;
         };
@@ -80,9 +81,9 @@
 
         layer_3 {
             bindings = <
-&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp CAPS  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                &trans                 &trans  &trans
+&kp CAPS  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                &trans                 &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
