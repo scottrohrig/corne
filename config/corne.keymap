@@ -18,9 +18,9 @@
             layers = <1>;
         };
 
-        combo {
-            bindings = <&tog 3>;
-            key-positions = <35 23>;
+        combo_p-sing_to_0 {
+            bindings = <&tog 0>;
+            key-positions = <23 10>;
             layers = <4>;
         };
 
@@ -28,6 +28,11 @@
             bindings = <&bt BT_NXT>;
             key-positions = <0 5>;
             layers = <1>;
+        };
+
+        combo_to_default {
+            bindings = <&to 0>;
+            key-positions = <17 18 16 19>;
         };
     };
 
@@ -79,11 +84,11 @@
             >;
         };
 
-        layer_3 {
+        capcom {
             bindings = <
-&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                &trans                 &trans  &trans
-&kp CAPS  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                &trans                 &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPS  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
