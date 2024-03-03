@@ -23,6 +23,9 @@ To flash the firmware to the keyboard, do this each side at a time:
 
 Uses ZMK firmware. Docs can be found [here](https://zmkfirmware.dev/docs/)
 
+To view combos and special settings in a gui, use the [zmk-configurator](https://nickcoutsos.github.io/keymap-editor/).
+Sign in with your github account and select the repository and branch you want to edit.
+
 ### Layers
 
 I have 4 layers set up on this keyboard:
