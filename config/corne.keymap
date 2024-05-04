@@ -34,6 +34,12 @@
             bindings = <&to 0>;
             key-positions = <17 18 16 19>;
         };
+
+        combo_bt_prev {
+            bindings = <&bt BT_PRV>;
+            key-positions = <0 4>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -103,7 +109,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
