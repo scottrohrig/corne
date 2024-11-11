@@ -42,26 +42,6 @@
         };
     };
 
-    behaviors {
-        u_mt: u_mt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "U_MT";
-            bindings = <&mt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        u_lt: u_lt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "U_LT";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -73,10 +53,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB               &kp Q          &kp W  &kp E     &kp R  &kp T          &kp Y         &kp U  &kp I      &kp O    &kp P                     &kp BSPC
-&mt LEFT_CONTROL ESC  &u_mt LS(A) A  &kp S  &kp D     &kp F  &kp G          &u_mt CAPS H  &kp J  &kp K      &kp L    &u_mt LS(SEMI) SEMICOLON  &kp SQT
-&kp LSHFT             &kp Z          &kp X  &kp C     &kp V  &kp B          &kp N         &kp M  &kp COMMA  &kp DOT  &kp FSLH                  &kp RIGHT_SHIFT
-                                            &kp LGUI  &mo 1  &lt 4 SPACE    &kp RET       &mo 2  &kp RALT
+&kp TAB               &kp Q        &kp W  &kp E     &kp R  &kp T          &kp Y       &kp U  &kp I      &kp O    &kp P                   &kp BSPC
+&mt LEFT_CONTROL ESC  &mt LS(A) A  &kp S  &kp D     &kp F  &kp G          &mt CAPS H  &kp J  &kp K      &kp L    &mt LS(SEMI) SEMICOLON  &kp SQT
+&kp LSHFT             &kp Z        &kp X  &kp C     &kp V  &kp B          &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH                &kp RIGHT_SHIFT
+                                          &kp LGUI  &mo 1  &lt 4 SPACE    &kp RET     &mo 2  &kp RALT
             >;
         };
 
