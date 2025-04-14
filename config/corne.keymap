@@ -52,8 +52,8 @@
         };
 
         tap_S-M {
-            bindings = <&sk RS(RIGHT_ALT)>;
-            key-positions = <31 20 21>;
+            bindings = <&sk RS(RA)>;
+            key-positions = <32 33 31>;
         };
 
         sk_m2 {
