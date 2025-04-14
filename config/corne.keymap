@@ -71,14 +71,18 @@
         os_shft_alt: one_shot_shift_alt {
             compatible = "zmk,behavior-one-shot"; // Standard one-shot behavior
             bindings = <&kp LALT LSHFT>;         // Inner binding often needed, can be placeholder keys
-                                                 // The important part is the 'mods' property below.
+            // The important part is the 'mods' property below.
+
             mods = <(MOD_RSFT | MOD_RALT)>;       // Define the modifier mask HERE
+            label = "OS_SHFT_ALT";
         };
+
         skmo: skmo {
             compatible = "zmk,behavior-sticky-key";
             bindings = <&mo>;
             #binding-cells = <1>;
             release-after-ms = <300>;
+            label = "SKMO";
         };
     };
 
