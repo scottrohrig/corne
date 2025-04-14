@@ -53,7 +53,7 @@
 
         tap_S-M {
             bindings = <&sk RS(RIGHT_ALT)>;
-            key-positions = <32 33 31>;
+            key-positions = <31 20 21>;
         };
 
         sk_m2 {
