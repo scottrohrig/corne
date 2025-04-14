@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/modal.h> 
 
 &mt {
     tapping-term-ms = <200>;
@@ -51,8 +52,9 @@
             key-positions = <32 33>;
         };
 
-        tap_S-M {
-            bindings = <&sk RS(RA)>;
+        tap_S_M: tap_s_m { // Renamed node slightly to be valid C identifier
+            // Use &osm with a mask combining Right Shift and Right Alt
+            bindings = <&osm(MOD_RSFT | MOD_RALT)>;
             key-positions = <32 33 31>;
         };
 
