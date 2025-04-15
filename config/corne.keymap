@@ -60,8 +60,7 @@
     behaviors {
         os_shft_alt: one_shot_shift_alt {
             compatible = "zmk,behavior-one-shot";
-            label = "OS_SHFT_ALT";         // You can keep or remove this label line
-            bindings = <&kp LALT>;         // Placeholder binding - using LALT as example
+            bindings = <&none>;        // Placeholder binding - using LALT as example
             mods = <(MOD_RSFT | MOD_RALT)>; // Your shift+alt mods
             #binding-cells = <0>;          // <<< MAKE SURE THIS LINE IS PRESENT AND CORRECT
         };
