@@ -59,12 +59,11 @@
 
     behaviors {
         os_shft_alt: one_shot_shift_alt {
-            compatible = "zmk,behavior-one-shot"; // Standard one-shot behavior
-            bindings = <&kp LALT LSHFT>;         // Inner binding often needed, can be placeholder keys
-            // The important part is the 'mods' property below.
-
-            mods = <(MOD_RSFT | MOD_RALT)>;       // Define the modifier mask HERE
-            label = "OS_SHFT_ALT";
+            compatible = "zmk,behavior-one-shot";
+            label = "OS_SHFT_ALT";         // You can keep or remove this label line
+            bindings = <&kp LALT>;         // Placeholder binding - using LALT as example
+            mods = <(MOD_RSFT | MOD_RALT)>; // Your shift+alt mods
+            #binding-cells = ;          // <<< MAKE SURE THIS LINE IS PRESENT AND CORRECT
         };
     };
 
