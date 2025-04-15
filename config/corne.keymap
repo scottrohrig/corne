@@ -63,7 +63,7 @@
             label = "OS_SHFT_ALT";         // You can keep or remove this label line
             bindings = <&kp LALT>;         // Placeholder binding - using LALT as example
             mods = <(MOD_RSFT | MOD_RALT)>; // Your shift+alt mods
-            #binding-cells = ;          // <<< MAKE SURE THIS LINE IS PRESENT AND CORRECT
+            #binding-cells = <0>;          // <<< MAKE SURE THIS LINE IS PRESENT AND CORRECT
         };
     };
 
