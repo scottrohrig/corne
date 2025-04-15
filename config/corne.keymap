@@ -55,16 +55,6 @@
             bindings = <&os_shft_alt>;
             key-positions = <32 33 31>;
         };
-
-        sk_m2 {
-            bindings = <&skmo 2>;
-            key-positions = <20 21>;
-        };
-
-        l-sk-m2 {
-            bindings = <&skmo 2>;
-            key-positions = <27 26>;
-        };
     };
 
     behaviors {
@@ -75,14 +65,6 @@
 
             mods = <(MOD_RSFT | MOD_RALT)>;       // Define the modifier mask HERE
             label = "OS_SHFT_ALT";
-        };
-
-        skmo: skmo {
-            compatible = "zmk,behavior-sticky-key";
-            bindings = <&mo>;
-            #binding-cells = <1>;
-            release-after-ms = <300>;
-            label = "SKMO";
         };
     };
 
